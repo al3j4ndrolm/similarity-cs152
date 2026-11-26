@@ -15,6 +15,7 @@ import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.toRequestBody
 
 class SearchViewModel : ViewModel() {
+    var serverUrl by mutableStateOf(DEFAULT_URL)
     var collection by mutableStateOf("flowers")
     var query by mutableStateOf("")
     var queryImage by mutableStateOf<Uri?>(null)
@@ -32,7 +33,7 @@ class SearchViewModel : ViewModel() {
     fun searchText() {
         if (query.isBlank()) return
         queryImage = null
-        doSearch { api.searchText(TextQuery(collection, query.trim())) }
+        doSearch { createApi(cleanUrl(serverUrl)).searchText(TextQuery(collection, query.trim())) }
     }
 
     fun searchImage(uri: Uri, resolver: ContentResolver) {
@@ -43,7 +44,7 @@ class SearchViewModel : ViewModel() {
             }
             val body = bytes.toRequestBody("image/*".toMediaType())
             val part = MultipartBody.Part.createFormData("file", "photo.jpg", body)
-            api.searchImage("flowers", 12, part)
+            createApi(cleanUrl(serverUrl)).searchImage("flowers", 12, part)
         }
     }
 

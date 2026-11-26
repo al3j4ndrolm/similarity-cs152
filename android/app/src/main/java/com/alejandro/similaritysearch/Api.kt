@@ -12,7 +12,7 @@ import retrofit2.http.POST
 import retrofit2.http.Part
 import retrofit2.http.Query
 
-const val BASE_URL = "http://10.0.2.2:8000/"
+const val DEFAULT_URL = "http://10.0.2.2:8000/"
 
 data class TextQuery(
     val collection: String,
@@ -52,9 +52,16 @@ private val client = OkHttpClient.Builder()
     .writeTimeout(60, TimeUnit.SECONDS)
     .build()
 
-val api: SimilarityApi = Retrofit.Builder()
-    .baseUrl(BASE_URL)
+fun createApi(baseUrl: String): SimilarityApi = Retrofit.Builder()
+    .baseUrl(baseUrl)
     .client(client)
     .addConverterFactory(GsonConverterFactory.create())
     .build()
     .create(SimilarityApi::class.java)
+
+fun cleanUrl(text: String): String {
+    var url = text.trim()
+    if (!url.startsWith("http://") && !url.startsWith("https://")) url = "http://$url"
+    if (!url.endsWith("/")) url = "$url/"
+    return url
+}
