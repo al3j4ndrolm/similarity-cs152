@@ -1,0 +1,15 @@
+encoder,data,items,seconds,items_per_second
+color-histogram,flowers_db,2040,13.41,152.1
+color-histogram,flowers_test,6149,39.58,155.4
+clip-vit-base-patch32,flowers_db,2040,19.54,104.4
+clip-vit-base-patch32,flowers_test,6149,52.2,117.8
+clip-vit-large-patch14,flowers_db,2040,114.88,17.8
+clip-vit-large-patch14,flowers_test,6149,343.42,17.9
+tfidf,news_train,11014,1.52,7238.6
+tfidf,news_test,7317,0.92,7986.9
+all-MiniLM-L6-v2,news_train,11014,29.99,367.3
+all-MiniLM-L6-v2,news_test,7317,19.31,378.9
+all-mpnet-base-v2,news_train,11014,188.91,58.3
+all-mpnet-base-v2,news_test,7317,121.61,60.2
+clip-vit-base-patch32,news_train,11014,39.74,277.2
+clip-vit-base-patch32,news_test,7317,23.83,307.0

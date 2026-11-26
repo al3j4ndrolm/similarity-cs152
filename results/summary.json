@@ -1,0 +1,702 @@
+{
+  "metrics": [
+    {
+      "task": "image->image (Flowers-102)",
+      "method": "color-histogram",
+      "queries": 6149,
+      "database": 2040,
+      "mAP": 0.13058219175955324,
+      "P@1": 0.320539925191088,
+      "R@1": 0.016026996259554397,
+      "P@5": 0.22702878516832006,
+      "R@5": 0.056757196292080016,
+      "P@10": 0.18412750040657022,
+      "R@10": 0.09206375020328511,
+      "P@20": 0.13833956740933484,
+      "R@20": 0.13833956740933484,
+      "P@50": 0.08136282322328833,
+      "R@50": 0.20340705805822085,
+      "P@100": 0.054794275491949915,
+      "R@100": 0.2739713774597496
+    },
+    {
+      "task": "image->image (Flowers-102)",
+      "method": "clip-vit-base-patch32",
+      "queries": 6149,
+      "database": 2040,
+      "mAP": 0.615551098184143,
+      "P@1": 0.8921775898520085,
+      "R@1": 0.044608879492600416,
+      "P@5": 0.8120670027646771,
+      "R@5": 0.20301675069116928,
+      "P@10": 0.7308668076109935,
+      "R@10": 0.36543340380549677,
+      "P@20": 0.5773621727110099,
+      "R@20": 0.5773621727110099,
+      "P@50": 0.29860465116279067,
+      "R@50": 0.7465116279069767,
+      "P@100": 0.16687591478289152,
+      "R@100": 0.8343795739144577
+    },
+    {
+      "task": "image->image (Flowers-102)",
+      "method": "clip-vit-large-patch14",
+      "queries": 6149,
+      "database": 2040,
+      "mAP": 0.8362940405715782,
+      "P@1": 0.9798341193690031,
+      "R@1": 0.04899170596845016,
+      "P@5": 0.95202471946658,
+      "R@5": 0.238006179866645,
+      "P@10": 0.9167506911692959,
+      "R@10": 0.45837534558464793,
+      "P@20": 0.7834363311107497,
+      "R@20": 0.7834363311107497,
+      "P@50": 0.3622702878516832,
+      "R@50": 0.905675719629208,
+      "P@100": 0.1887737843551797,
+      "R@100": 0.9438689217758985
+    },
+    {
+      "task": "text->text (20 Newsgroups)",
+      "method": "tfidf",
+      "queries": 7317,
+      "database": 11014,
+      "mAP": 0.1423908808219648,
+      "P@1": 0.5651223178898456,
+      "R@1": 0.0010133826500730249,
+      "P@5": 0.5021183545168785,
+      "R@5": 0.004490247833307475,
+      "P@10": 0.46941369413694134,
+      "R@10": 0.008389310986994346,
+      "P@20": 0.43042230422304223,
+      "R@20": 0.015365605650458079,
+      "P@50": 0.3710783107831078,
+      "R@50": 0.033068558394598775,
+      "P@100": 0.32169741697416976,
+      "R@100": 0.05729592793463994
+    },
+    {
+      "task": "text->text (20 Newsgroups)",
+      "method": "all-MiniLM-L6-v2",
+      "queries": 7317,
+      "database": 11014,
+      "mAP": 0.29015001872876506,
+      "P@1": 0.6732267322673227,
+      "R@1": 0.0012018140075254274,
+      "P@5": 0.6175481754817549,
+      "R@5": 0.005509549060421816,
+      "P@10": 0.5881782151154846,
+      "R@10": 0.010482775961114348,
+      "P@20": 0.5571819051523849,
+      "R@20": 0.019847554349783036,
+      "P@50": 0.512390323903239,
+      "R@50": 0.04558940633371938,
+      "P@100": 0.4723042230422304,
+      "R@100": 0.08396584574839354
+    },
+    {
+      "task": "text->text (20 Newsgroups)",
+      "method": "all-mpnet-base-v2",
+      "queries": 7317,
+      "database": 11014,
+      "mAP": 0.3253337351780074,
+      "P@1": 0.6970069700697007,
+      "R@1": 0.0012455832479926461,
+      "P@5": 0.6508131747984146,
+      "R@5": 0.0058098127307689,
+      "P@10": 0.6231515648489817,
+      "R@10": 0.01111441871722493,
+      "P@20": 0.5923124231242314,
+      "R@20": 0.02111506801760135,
+      "P@50": 0.5488943556102228,
+      "R@50": 0.04886013502816946,
+      "P@100": 0.5111644116441164,
+      "R@100": 0.0909244443792252
+    },
+    {
+      "task": "text->text (20 Newsgroups)",
+      "method": "clip-vit-base-patch32",
+      "queries": 7317,
+      "database": 11014,
+      "mAP": 0.16864264438626242,
+      "P@1": 0.5520021866885335,
+      "R@1": 0.000985470605738304,
+      "P@5": 0.5033483668170015,
+      "R@5": 0.004483852008975669,
+      "P@10": 0.47440207735410683,
+      "R@10": 0.008448382425813573,
+      "P@20": 0.44233975673090065,
+      "R@20": 0.015743663057480154,
+      "P@50": 0.3884406177395108,
+      "R@50": 0.03451926444996532,
+      "P@100": 0.33956812901462347,
+      "R@100": 0.060347102981430055
+    },
+    {
+      "task": "text->image (Flowers-102)",
+      "method": "clip-vit-base-patch32",
+      "queries": 102,
+      "database": 8189,
+      "mAP": 0.5707490375753693,
+      "P@1": 0.7352941176470589,
+      "R@1": 0.010988933219854384,
+      "P@5": 0.6980392156862744,
+      "R@5": 0.05143970475946546,
+      "P@10": 0.6892156862745098,
+      "R@10": 0.10188571900454729,
+      "P@20": 0.6617647058823529,
+      "R@20": 0.19417654169265913,
+      "P@50": 0.5923529411764706,
+      "R@50": 0.4214345313816363,
+      "P@100": 0.44950980392156864,
+      "R@100": 0.6056742596888577
+    },
+    {
+      "task": "text->image (Flowers-102)",
+      "method": "clip-vit-large-patch14",
+      "queries": 102,
+      "database": 8189,
+      "mAP": 0.7484490814258299,
+      "P@1": 0.8137254901960784,
+      "R@1": 0.0120778631899505,
+      "P@5": 0.792156862745098,
+      "R@5": 0.0585053424370249,
+      "P@10": 0.7941176470588235,
+      "R@10": 0.11754332096245626,
+      "P@20": 0.7852941176470589,
+      "R@20": 0.23370577927793107,
+      "P@50": 0.7378431372549019,
+      "R@50": 0.5362792089240597,
+      "P@100": 0.563627450980392,
+      "R@100": 0.7605675826998914
+    }
+  ],
+  "search_speed": [
+    {
+      "index": "Flowers-102 database (CLIP B/32)",
+      "size": 2040,
+      "dims": 512,
+      "numpy_ms": 1.6412,
+      "faiss_flat_ms": 0.2065,
+      "faiss_hnsw_ms": 0.1471,
+      "hnsw_build_s": 0.18,
+      "hnsw_overlap_at_10": 1.0
+    },
+    {
+      "index": "20 Newsgroups train (MiniLM)",
+      "size": 11014,
+      "dims": 384,
+      "numpy_ms": 0.8469,
+      "faiss_flat_ms": 0.7421,
+      "faiss_hnsw_ms": 0.1847,
+      "hnsw_build_s": 1.24,
+      "hnsw_overlap_at_10": 0.9945
+    },
+    {
+      "index": "synthetic 10,000 x 512",
+      "size": 10000,
+      "dims": 512,
+      "numpy_ms": 1.0989,
+      "faiss_flat_ms": 0.9176,
+      "faiss_hnsw_ms": 0.4655,
+      "hnsw_build_s": 3.03,
+      "hnsw_overlap_at_10": 0.541
+    },
+    {
+      "index": "synthetic 50,000 x 512",
+      "size": 50000,
+      "dims": 512,
+      "numpy_ms": 7.4188,
+      "faiss_flat_ms": 7.775,
+      "faiss_hnsw_ms": 1.0507,
+      "hnsw_build_s": 30.04,
+      "hnsw_overlap_at_10": 0.1875
+    },
+    {
+      "index": "synthetic 200,000 x 512",
+      "size": 200000,
+      "dims": 512,
+      "numpy_ms": 31.9123,
+      "faiss_flat_ms": 35.2252,
+      "faiss_hnsw_ms": 1.1395,
+      "hnsw_build_s": 158.44,
+      "hnsw_overlap_at_10": 0.073
+    }
+  ],
+  "encode_speed": [
+    {
+      "encoder": "color-histogram",
+      "data": "flowers_db",
+      "items": 2040,
+      "seconds": 13.41,
+      "items_per_second": 152.1
+    },
+    {
+      "encoder": "color-histogram",
+      "data": "flowers_test",
+      "items": 6149,
+      "seconds": 39.58,
+      "items_per_second": 155.4
+    },
+    {
+      "encoder": "clip-vit-base-patch32",
+      "data": "flowers_db",
+      "items": 2040,
+      "seconds": 19.54,
+      "items_per_second": 104.4
+    },
+    {
+      "encoder": "clip-vit-base-patch32",
+      "data": "flowers_test",
+      "items": 6149,
+      "seconds": 52.2,
+      "items_per_second": 117.8
+    },
+    {
+      "encoder": "clip-vit-large-patch14",
+      "data": "flowers_db",
+      "items": 2040,
+      "seconds": 114.88,
+      "items_per_second": 17.8
+    },
+    {
+      "encoder": "clip-vit-large-patch14",
+      "data": "flowers_test",
+      "items": 6149,
+      "seconds": 343.42,
+      "items_per_second": 17.9
+    },
+    {
+      "encoder": "tfidf",
+      "data": "news_train",
+      "items": 11014,
+      "seconds": 1.52,
+      "items_per_second": 7238.6
+    },
+    {
+      "encoder": "tfidf",
+      "data": "news_test",
+      "items": 7317,
+      "seconds": 0.92,
+      "items_per_second": 7986.9
+    },
+    {
+      "encoder": "all-MiniLM-L6-v2",
+      "data": "news_train",
+      "items": 11014,
+      "seconds": 29.99,
+      "items_per_second": 367.3
+    },
+    {
+      "encoder": "all-MiniLM-L6-v2",
+      "data": "news_test",
+      "items": 7317,
+      "seconds": 19.31,
+      "items_per_second": 378.9
+    },
+    {
+      "encoder": "all-mpnet-base-v2",
+      "data": "news_train",
+      "items": 11014,
+      "seconds": 188.91,
+      "items_per_second": 58.3
+    },
+    {
+      "encoder": "all-mpnet-base-v2",
+      "data": "news_test",
+      "items": 7317,
+      "seconds": 121.61,
+      "items_per_second": 60.2
+    },
+    {
+      "encoder": "clip-vit-base-patch32",
+      "data": "news_train",
+      "items": 11014,
+      "seconds": 39.74,
+      "items_per_second": 277.2
+    },
+    {
+      "encoder": "clip-vit-base-patch32",
+      "data": "news_test",
+      "items": 7317,
+      "seconds": 23.83,
+      "items_per_second": 307.0
+    }
+  ],
+  "flowers_hardest": [
+    [
+      "canterbury bells",
+      0.15435754566232368,
+      20
+    ],
+    [
+      "sword lily",
+      0.20269691371785079,
+      110
+    ],
+    [
+      "carnation",
+      0.26934898921947314,
+      32
+    ],
+    [
+      "bolero deep blue",
+      0.29042367322056195,
+      20
+    ],
+    [
+      "columbine",
+      0.3054276722983927,
+      66
+    ],
+    [
+      "sweet pea",
+      0.3102239464548367,
+      36
+    ],
+    [
+      "siam tulip",
+      0.3108263928524109,
+      21
+    ],
+    [
+      "petunia",
+      0.3138456789920268,
+      238
+    ],
+    [
+      "bougainvillea",
+      0.31806168843519944,
+      108
+    ],
+    [
+      "mallow",
+      0.3183135399916867,
+      46
+    ]
+  ],
+  "flowers_easiest": [
+    [
+      "oxeye daisy",
+      0.8955487305435018,
+      29
+    ],
+    [
+      "osteospermum",
+      0.9216802581482889,
+      41
+    ],
+    [
+      "marigold",
+      0.9303405515834485,
+      47
+    ],
+    [
+      "geranium",
+      0.969559238966944,
+      94
+    ],
+    [
+      "bishop of llandaff",
+      0.9706894933748188,
+      89
+    ],
+    [
+      "orange dahlia",
+      0.9789387220557035,
+      47
+    ],
+    [
+      "black-eyed susan",
+      0.9839726305926048,
+      34
+    ],
+    [
+      "pink-yellow dahlia",
+      0.9854780320172741,
+      89
+    ],
+    [
+      "silverbush",
+      0.9873778841106488,
+      32
+    ],
+    [
+      "cautleya spicata",
+      0.9965861480638958,
+      30
+    ]
+  ],
+  "news_ap_by_topic": [
+    [
+      "sci.electronics",
+      0.11644359365927369,
+      383
+    ],
+    [
+      "talk.religion.misc",
+      0.11993757105083765,
+      245
+    ],
+    [
+      "talk.politics.misc",
+      0.13143910971644232,
+      303
+    ],
+    [
+      "alt.atheism",
+      0.16198021193459883,
+      311
+    ],
+    [
+      "comp.os.ms-windows.misc",
+      0.1896807979331022,
+      379
+    ],
+    [
+      "comp.sys.mac.hardware",
+      0.19250826151787284,
+      371
+    ],
+    [
+      "sci.space",
+      0.21473230740196075,
+      378
+    ],
+    [
+      "comp.sys.ibm.pc.hardware",
+      0.22777531271599402,
+      386
+    ],
+    [
+      "rec.autos",
+      0.22828449350770597,
+      375
+    ],
+    [
+      "comp.graphics",
+      0.23881423799112053,
+      384
+    ],
+    [
+      "rec.motorcycles",
+      0.24999141370732025,
+      386
+    ],
+    [
+      "talk.politics.guns",
+      0.2837978255228055,
+      354
+    ],
+    [
+      "sci.med",
+      0.29713786054576674,
+      382
+    ],
+    [
+      "misc.forsale",
+      0.34609089260858594,
+      382
+    ],
+    [
+      "comp.windows.x",
+      0.34950751334594626,
+      391
+    ],
+    [
+      "soc.religion.christian",
+      0.35171765621603396,
+      384
+    ],
+    [
+      "sci.crypt",
+      0.3898218995645752,
+      380
+    ],
+    [
+      "talk.politics.mideast",
+      0.471865827482218,
+      370
+    ],
+    [
+      "rec.sport.baseball",
+      0.5155350333843886,
+      383
+    ],
+    [
+      "rec.sport.hockey",
+      0.601456547892666,
+      390
+    ]
+  ],
+  "text_examples": [
+    {
+      "query": "NASA is planning a new mission to send astronauts to Mars",
+      "results": {
+        "tfidf": [
+          {
+            "topic": "sci.space",
+            "score": 0.211,
+            "text": "Portuguese launch complex??? Gosh.... Polish are for American in the same way as Portuguese are for Brazilians (I am from Brazil). There is a joke about the Portuguese Space Agency that wanted to send"
+          },
+          {
+            "topic": "sci.space",
+            "score": 0.204,
+            "text": "What is the deal with life on Mars? I save the \"face\" and heard associated theories. (which sound thin to me) Are we going back to Mars to look at this face agian? Does anyone buy all the life theorie"
+          },
+          {
+            "topic": "sci.space",
+            "score": 0.193,
+            "text": "Better idea for use of NASA Shuttle Astronauts and Crew is have them be found lost in space after a accident with a worm hole or other space/time glitch.. Maybe age Jemison a few years (makeup and suc"
+          }
+        ],
+        "all-MiniLM-L6-v2": [
+          {
+            "topic": "sci.space",
+            "score": 0.466,
+            "text": "What is the deal with life on Mars? I save the \"face\" and heard associated theories. (which sound thin to me) Are we going back to Mars to look at this face agian? Does anyone buy all the life theorie"
+          },
+          {
+            "topic": "sci.space",
+            "score": 0.457,
+            "text": "Reply address: mark.prado@permanet.org > From: higgins@fnalf.fnal.gov (Bill Higgins-- Beam Jockey) > > In article <1993Apr19.230236.18227@aio.jsc.nasa.gov>, > > |> AW&ST had a brief blurb on a Manned "
+          },
+          {
+            "topic": "sci.space",
+            "score": 0.453,
+            "text": "Lets hear it for Dan Goldin...now if he can only convince the rest of our federal government that the space program is a worth while investment! I hope that I will live to see the day we walk on Mars,"
+          }
+        ]
+      }
+    },
+    {
+      "query": "my graphics card driver keeps crashing when I render 3D scenes",
+      "results": {
+        "tfidf": [
+          {
+            "topic": "comp.graphics",
+            "score": 0.249,
+            "text": "I haven't been following this thread, so appologies if this has already been mentioned, but how about comp.graphics.3d"
+          },
+          {
+            "topic": "comp.graphics",
+            "score": 0.194,
+            "text": "Hello everybody ! If you are using PIXAR'S RenderMan 3D scene description language for creating 3D worlds, please, help me. I'm using RenderMan library on my NeXT but there is no documentation about N"
+          },
+          {
+            "topic": "comp.graphics",
+            "score": 0.167,
+            "text": "I am currently looking for a 3D graphics library that runs on MS Windows 3.1. Are there any such libraries out there other than Visuallib? (It must run on VGA and should not require any other add-on g"
+          }
+        ],
+        "all-MiniLM-L6-v2": [
+          {
+            "topic": "comp.os.ms-windows.misc",
+            "score": 0.441,
+            "text": "I have (had) several problems with the card. - Applications crashed when moving the mouse (VGA mode). Fixed by removing the line STACKS=0,0 from config.sys. The default value STACKS=9,256 does just fi"
+          },
+          {
+            "topic": "comp.os.ms-windows.misc",
+            "score": 0.412,
+            "text": "Have you tried setting FILES in your config.sys file to a fairly high number? (I've got mine set to 100; I've seen numbers from 40 to 100 recommended). Also check your STACKS statement, STACKS=9,256 i"
+          },
+          {
+            "topic": "comp.sys.ibm.pc.hardware",
+            "score": 0.391,
+            "text": "I would appreciate the driver name from CICA which functions as a 256 color driver for a Quadtel video card. The type of chip or chipset used would suffice as well."
+          }
+        ]
+      }
+    },
+    {
+      "query": "should I take antibiotics for a cold",
+      "results": {
+        "tfidf": [
+          {
+            "topic": "talk.politics.guns",
+            "score": 0.342,
+            "text": "Do YOU eat all your food cold? --"
+          },
+          {
+            "topic": "sci.med",
+            "score": 0.211,
+            "text": "I recently had a case of shingles and my doctors wanted to give me intravenous Acyclovir. It was a pain finding IV sites in my arms...can I have some facts about how advantageous it is to give intrave"
+          },
+          {
+            "topic": "sci.med",
+            "score": 0.198,
+            "text": "A brain abscess is an infection deep in the brain substance. It is hard to cure with antibiotics, since it gets walled off, and usually, it needs surgical drainage. -- --------------------------------"
+          }
+        ],
+        "all-MiniLM-L6-v2": [
+          {
+            "topic": "sci.med",
+            "score": 0.524,
+            "text": "It depends on the cause of the pneumonia. For treating bacterial pneumonia in young otherwise-healthy non-smokers, erythromycin is usually considered the antibiotic of choice, since it covers the two "
+          },
+          {
+            "topic": "sci.med",
+            "score": 0.52,
+            "text": "Is erythromycin effective in treating pneumonia?"
+          },
+          {
+            "topic": "sci.med",
+            "score": 0.456,
+            "text": "If the nose culture shows Staph, then Ceftin or even Ceclor are better. Suprax does not kill Staph. Treating bacterial infections involves a lot of try-and-fail because the infections often involve mu"
+          }
+        ]
+      }
+    },
+    {
+      "query": "who will win the world series this year",
+      "results": {
+        "tfidf": [
+          {
+            "topic": "rec.sport.baseball",
+            "score": 0.496,
+            "text": "These people were very silly. Any team that gets to the World Series can win the World Series, and anybody who ever expects a sweep is crazy. If you put the best team in baseball in the Series against"
+          },
+          {
+            "topic": "rec.sport.hockey",
+            "score": 0.308,
+            "text": "I am not sure about the tie breaker rules. However, I think if the Islanders win (Oh God, Please, Please let them win), the Islanders win the series against NJ and advances to third. *****************"
+          },
+          {
+            "topic": "rec.sport.baseball",
+            "score": 0.301,
+            "text": "Hey Valentine, I don't see Boston with any world series rings on their fingers. Damn, Morris now has three and probably the Hall of Fame in his future. Therefore, I would have to say Toronto easily ma"
+          }
+        ],
+        "all-MiniLM-L6-v2": [
+          {
+            "topic": "rec.sport.baseball",
+            "score": 0.604,
+            "text": "These people were very silly. Any team that gets to the World Series can win the World Series, and anybody who ever expects a sweep is crazy. If you put the best team in baseball in the Series against"
+          },
+          {
+            "topic": "rec.sport.baseball",
+            "score": 0.574,
+            "text": "I thought I'd post my predicted standings since I find those posted by others to be interesting. Sorry this is after Opening Day. I certify that these were completed before the first pitch. :-) AL Eas"
+          },
+          {
+            "topic": "rec.sport.baseball",
+            "score": 0.558,
+            "text": "That's might be what it takes to beat the Braves this year."
+          }
+        ]
+      }
+    }
+  ],
+  "quick_mode": false,
+  "environment": {
+    "python": "3.13.16",
+    "machine": "x86_64",
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "sentence_transformers": "5.7.0",
+    "gpu": "Tesla T4",
+    "faiss": "1.16.0"
+  },
+  "total_minutes": 23.8
+}

@@ -1,0 +1,6 @@
+index,size,dims,numpy_ms,faiss_flat_ms,faiss_hnsw_ms,hnsw_build_s,hnsw_overlap_at_10
+Flowers-102 database (CLIP B/32),2040,512,1.6412,0.2065,0.1471,0.18,1.0
+20 Newsgroups train (MiniLM),11014,384,0.8469,0.7421,0.1847,1.24,0.9945
+"synthetic 10,000 x 512",10000,512,1.0989,0.9176,0.4655,3.03,0.541
+"synthetic 50,000 x 512",50000,512,7.4188,7.775,1.0507,30.04,0.1875
+"synthetic 200,000 x 512",200000,512,31.9123,35.2252,1.1395,158.44,0.073
